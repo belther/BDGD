@@ -1,0 +1,12 @@
+CREATE MATERIALIZED VIEW VG_CONJUNTO_ANEEL AS
+select pri.id  pri_conjunto_cns_id,
+       pri.cd_conjunto_cns,
+       tab.nr_conjunto_aneel,
+       pri.nm_conjunto_cns,
+       geo.GEOMETRY
+from pri_conjunto_cns pri
+     left join cad_conjunto_cns tab
+          on pri.cd_conjunto_cns = tab.cd_conjunto_cns
+     left join PRI_CONJUNTO_CNS_F geo
+          on geo.PRI_CONJUNTO_CNS_ID = pri.id
+where geo.geometry is not null;

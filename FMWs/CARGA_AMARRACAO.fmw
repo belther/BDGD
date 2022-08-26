@@ -1,0 +1,2581 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2018\fme.exe" C:\temp\mc\CARGA_AMARRACAO.fmw
+#              --SourceDataset_XLSXR "C:\temp\mc\espec_amarracao.xlsx"
+#              --SourceDataset_XLSXR_5 "C:\temp\mc\modulo_componente_amarracao.xlsx"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3346.91 1834.51"
+#!   DOC_TOP_LEFT="-78.1268 -2150.14"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="18552"
+#!   FME_DOCUMENT_GUID="0c94564f-4b50-43da-9684-c7eab69af279"
+#!   FME_DOCUMENT_PRIORGUID="b35e56af-2e18-4494-9b29-c4fb07a0e32b,c7579c5a-ec88-46c2-9c4e-d2c02f784300,a0f0c48b-6736-4dec-87de-488b52f9a465,609db80a-d772-4135-8e5c-495966a29176,f674e83d-ac1f-4f23-9fd8-54501252ca70,6c1e6f29-3a00-4b0c-91aa-593a623fd28a,16abd82a-9801-48f1-af7c-b9236aa1c1d0,f6469930-b5f8-4eb6-b1f9-7a19f58c74c8,b306dcce-42fe-4da7-8d84-aae148d2c87e,8b17fc62-2fbb-4434-92ae-bc9c0a50f634,bf3df486-fc19-47b9-ac2c-059903f619ca,b51ff3bd-9219-4371-93f1-f67b7b88bb50,be082635-021e-4917-aebf-457e2ccb5c94,39ab831b-4dba-4cd3-9e8e-58b81c29e4ec,e69ff96a-28e1-419e-bbd9-7433cb361e15,6bf772af-4dd9-4cf3-93bd-be33168fb1f1,2209c00f-78f1-4148-8512-a339140bc924,06089d2b-53a2-46c3-bba8-5b69e22295ad,99a05fb9-34dc-4633-bafd-3a4460a0c0af"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.0.3 (20180926 - Build 18552 - WIN64)"
+#!   LAST_SAVE_DATE="2019-05-23T11:45:35"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="106.251 -84.3758"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR)"
+#!   KEYWORD="XLSXR_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_rotation number(31,15) fme_dataset char(50) fme_color char(50) fme_fill_color char(50) fme_type char(50) multi_reader_type char(50) multi_reader_id number(11,0) fme_sweep_angle number(31,15) fme_feature_type char(50) fme_text_size number(31,15) fme_secondary_axis number(31,15) fme_geometry char(50) fme_text_string char(50) xlsx_row_id number(11,0) multi_reader_keyword char(50) multi_reader_full_id number(11,0)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="18552"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR_5)"
+#!   KEYWORD="XLSXR_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_rotation number(31,15) fme_dataset char(50) fme_color char(50) fme_fill_color char(50) fme_type char(50) multi_reader_type char(50) multi_reader_id number(11,0) fme_feature_type char(50) fme_text_size number(31,15) fme_sweep_angle number(31,15) fme_secondary_axis number(31,15) fme_geometry char(50) fme_text_string char(50) xlsx_row_id number(11,0) multi_reader_keyword char(50) multi_reader_full_id number(11,0)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="18552"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#!   DATASET="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="30"
+#!   ATTR_CASE="UPPER_FIRST_ALPHA"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="oracle_create_table &quot;&quot; oracle_drop_table &quot;&quot; oracle_table_writer_mode &quot;&quot; oracle_update_key_columns &quot;&quot; oracle_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; oracle_params &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_sequenced_cols &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle float fme_secondary_axis float fme_feature_type char(50) fme_db_operation char(8) fme_text_string char(50) fme_dataset char(50) oracle_type char(50) fme_geometry char(50) fme_color char(50) fme_basename char(50) fme_fill_color char(50) fme_primary_axis float fme_start_angle float fme_text_size float fme_type char(50) fme_rotation float"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group oracle_params Table Creation Parameters&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_params Additional CREATE TABLE Clause(s)&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_advanced_group oracle_sequenced_cols%oracle_sql_encoded Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_sequenced_cols Sequenced Table Columns&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_sql_encoded MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL Statement (Overrides Feature Operation)&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
+#!   ATTR_NAME_INVALID_CHARS=".%&lt;&gt;|: []()?*&apos;&amp;+-/}{\\&quot;"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   GENERATE_FME_BUILD_NUM="18552"
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ORACLE_NONSPATIAL_OUT_START_TRANSACTION ORACLE_NONSPATIAL_OUT_CHUNK_SIZE ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0} ORACLE_NONSPATIAL_OUT_END_SQL{0} ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar2(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nclob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xmltype"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(19,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_circle"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoint"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_line"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multiline"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_area"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoly"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_arc"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_solid"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_surface"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisolid"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisurface"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="MODULO"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3193.7825233115664 -949.38509385093857"
+#!   BOUNDING_RECT="3193.7825233115664 -949.38509385093857 -1 -1"
+#!   ORDER="500000000000006"
+#!   COLLAPSED="false"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_GRUPO_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DS_MODULO" ATTR_TYPE="varchar2(120)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="USE_EXISTING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_advanced_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_params" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sequenced_cols" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="ESPEC_MOD_AMARRACAO"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3065.6562420487535 -1368.9735730690641"
+#!   BOUNDING_RECT="3065.6562420487535 -1368.9735730690641 -1 -1"
+#!   ORDER="500000000000117"
+#!   COLLAPSED="false"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TIPO_AMARRACAO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_QTD_FASE" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_QTD" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ESPEC_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_CABO_DISTR" ATTR_TYPE="varchar2(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="USE_EXISTING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_advanced_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_params" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sequenced_cols" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="COMPONENTE_MODULO"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3125.0312503125037 -2009.3950939509398"
+#!   BOUNDING_RECT="3125.0312503125037 -2009.3950939509398 -1 -1"
+#!   ORDER="500000000000113"
+#!   COLLAPSED="true"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_MATERIAL" ATTR_TYPE="varchar2(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_SERVICO" ATTR_TYPE="varchar2(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="QT_COMPONENTE_MODULO" ATTR_TYPE="number(9,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_OPERACAO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_GRUPO_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_COMPONENTE_MODULO" ATTR_TYPE="number" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="USE_EXISTING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_params" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sequenced_cols" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Dados"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="47"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="15.624156241562389 -1703.0132501325015"
+#!   BOUNDING_RECT="15.624156241562389 -1703.0132501325015 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DS_MODULO" ATTR_TYPE="char(45)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_MATERIAL" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_SERVICO" ATTR_TYPE="number(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="QT_COMPONENTE_MODULO" ATTR_TYPE="number(6,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_OPERACAO" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_col,0;xlsx_schema_end_row,0;xlsx_schema_start_row,1;xlsx_schema_end_col,0;xlsx_header_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Dados"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="48"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-78.126781267812675 -372.62815628156272"
+#!   BOUNDING_RECT="-78.126781267812675 -372.62815628156272 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_3"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DS_MODULO" ATTR_TYPE="char(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_CABO_DISTR" ATTR_TYPE="char(24)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TIPO_AMARRACAO" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_QTD" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_QTD_FASE" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_col,0;xlsx_schema_end_row,0;xlsx_schema_start_row,1;xlsx_schema_end_col,0;xlsx_header_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE="XLSXR_3"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="ModuloConstrutivo"
+#! />
+#! <ITEM
+#!   NAME="CARGA_ISOLADOR_AT.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":DatasetMgr_XLSXR_2:SourceDataset_XLSXR_2"
+#!   VALUE="$(SourceDataset_XLSXR_5)"
+#! />
+#! <MODIFICATION
+#!   UID=":DatasetMgr_XLSXR_3:SourceDataset_XLSXR_3"
+#!   VALUE="$(SourceDataset_XLSXR)"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:SourceDataset_XLSXR"
+#!   VALUE="$(FME_MF_DIR)espec_isolador_at.xlsx"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:SourceDataset_XLSXR_5"
+#!   VALUE="$(FME_MF_DIR)modulo_componente_isolador_at.xlsx"
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="XLSXR_3"
+#!   OVERRIDE="-XLSXR_3_DATASET"
+#!   DATASET="XLSXR_3/espec_amarracao.xlsx"
+#! />
+#! <DATASET 
+#!   NAME="XLSXR_2"
+#!   OVERRIDE="-XLSXR_2_DATASET"
+#!   DATASET="XLSXR_2/modulo_componente_amarracao.xlsx"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)espec_amarracao.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR_5 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)modulo_componente_amarracao.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="Aggregator"
+#!   VERSION="14"
+#!   POSITION="756.25756257562603 -315.62815628156272"
+#!   BOUNDING_RECT="756.25756257562603 -315.62815628156272 -1 -1"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="AGGREGATE"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Drop Incoming Attributes"/>
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ASSEMBLE_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TO_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AV" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONCAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CYCLE_ID_ERROR_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="DS_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Attributes Only"/>
+#!     <XFORM_PARM PARM_NAME="ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_ID" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUM" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WEIGHT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="FeatureHolder"
+#!   VERSION="0"
+#!   POSITION="756.25756257562603 -796.88296882968825"
+#!   BOUNDING_RECT="756.25756257562603 -796.88296882968825 -1 -1"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureHolder"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="SQLExecutor"
+#!   VERSION="8"
+#!   POSITION="1837.5183751837521 -315.62815628156272"
+#!   BOUNDING_RECT="1837.5183751837521 -315.62815628156272 -1 -1"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Initiator Attributes if Conflict"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="ID_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;SEQ_ID_MODULO.NEXTVAL&lt;space&gt;as&lt;space&gt;ID_MODULO&lt;space&gt;FROM&lt;space&gt;DUAL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="FeatureHolder"
+#!   VERSION="0"
+#!   POSITION="1215.6371563715636 -2150.1390313903139"
+#!   BOUNDING_RECT="1215.6371563715636 -2150.1390313903139 -1 -1"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="QT_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_OPERACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureHolder_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="DatabaseDeleter"
+#!   VERSION="0"
+#!   POSITION="3231.2823128231289 -315.62815628156272"
+#!   BOUNDING_RECT="3231.2823128231289 -315.62815628156272 -1 -1"
+#!   ORDER="500000000000031"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <XFORM_PARM PARM_NAME="CONDITION" PARM_VALUE="WHERE Clause"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_COLUMNS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="MODULO_CONSTRUTIVO.COMPONENTE_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE_CLAUSE" PARM_VALUE="ID_MODULO&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;SELECT&lt;space&gt;ID_MODULO&lt;space&gt;FROM&lt;space&gt;modulo&lt;space&gt;WHERE&lt;space&gt;ID_GRUPO_MODULO&lt;space&gt;=&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;ID_GRUPO_MODULO&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DEL_COMPONENTE_MODULO"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="DatabaseDeleter"
+#!   VERSION="0"
+#!   POSITION="3238.381343813438 -651.12728127281298"
+#!   BOUNDING_RECT="3238.381343813438 -651.12728127281298 -1 -1"
+#!   ORDER="500000000000031"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <XFORM_PARM PARM_NAME="CONDITION" PARM_VALUE="WHERE Clause"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_COLUMNS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="MODULO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE_CLAUSE" PARM_VALUE="ID_GRUPO_MODULO&lt;space&gt;=&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;ID_GRUPO_MODULO&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DEL_MODULO"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="DatabaseDeleter"
+#!   VERSION="0"
+#!   POSITION="3268.7832733190658 -487.50513935859453"
+#!   BOUNDING_RECT="3268.7832733190658 -487.50513935859453 -1 -1"
+#!   ORDER="500000000000031"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <XFORM_PARM PARM_NAME="CONDITION" PARM_VALUE="WHERE Clause"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_SERVER_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_COLUMNS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="MODULO_CONSTRUTIVO.ESPEC_MOD_AMARRACAO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE_CLAUSE" PARM_VALUE="ID_MODULO&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;SELECT&lt;space&gt;ID_MODULO&lt;space&gt;FROM&lt;space&gt;modulo&lt;space&gt;WHERE&lt;space&gt;ID_GRUPO_MODULO&lt;space&gt;=&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;ID_GRUPO_MODULO&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DEL_ESPEC_MOD_AMARRACAO"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="FeatureHolder"
+#!   VERSION="0"
+#!   POSITION="612.5061250612506 -1351.8867188671879"
+#!   BOUNDING_RECT="612.5061250612506 -1351.8867188671879 -1 -1"
+#!   ORDER="500000000000034"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureHolder_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="15"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="1"
+#!   POSITION="1737.5173751737511 -1915.9745730790651"
+#!   BOUNDING_RECT="1737.5173751737511 -1915.9745730790651 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="StringPadder_Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="QT_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_OPERACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CD_MATERIAL" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;CD_MATERIAL&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CD_SERVICO" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;CD_SERVICO&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DS_MODULO" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;DS_MODULO&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="Componente_Modulo"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Componente_Modulo"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1000"
+#!   POSITION="1367.2002689375036 -1193.764937649376"
+#!   BOUNDING_RECT="1367.2002689375036 -1193.764937649376 -1 -1"
+#!   ORDER="500000000000013"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="DS_MODULO DS_MODULO AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ESPEC_MOD"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="SQLExecutor"
+#!   VERSION="8"
+#!   POSITION="2185.9594727812578 -1277.5133751337514"
+#!   BOUNDING_RECT="2185.9594727812578 -1277.5133751337514 -1 -1"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_ESPEC_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_ESPEC_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Initiator Attributes if Conflict"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="ID_ESPEC_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;SEQ_ID_ESPEC_MODULO.NEXTVAL&lt;space&gt;as&lt;space&gt;ID_ESPEC_MODULO&lt;space&gt;FROM&lt;space&gt;DUAL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="FeatureHolder"
+#!   VERSION="0"
+#!   POSITION="2465.6496564965655 -688.00325003250055"
+#!   BOUNDING_RECT="2465.6496564965655 -688.00325003250055 -1 -1"
+#!   ORDER="500000000000094"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureHolder_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="Sampler"
+#!   VERSION="4"
+#!   POSITION="2440.6494064940644 -315.62815628156272"
+#!   BOUNDING_RECT="2440.6494064940644 -315.62815628156272 -1 -1"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_TYPE_LONG" PARM_VALUE="First N Features"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sampler"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="20"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1290.6379063790632 -315.62815628156272"
+#!   BOUNDING_RECT="1290.6379063790632 -315.62815628156272 -1 -1"
+#!   ORDER="500000000000104"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_GRUPO_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; ID_GRUPO_MODULO SET_TO -7"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="40"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="703.13203132031299 -1853.1435314353148"
+#!   BOUNDING_RECT="703.13203132031299 -1853.1435314353148 -1 -1"
+#!   ORDER="500000000000108"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="QT_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_OPERACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="QT_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_OPERACAO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="CD_SERVICO CD_MATERIAL ID_OPERACAO DS_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="43"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="209.37709377093779 -606.62815628156272"
+#!   BOUNDING_RECT="209.37709377093779 -606.62815628156272 -1 -1"
+#!   ORDER="500000000000109"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_CABO_DISTR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TIPO_AMARRACAO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_QTD_FASE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="DS_MODULO ID_TIPO_AMARRACAO ID_QTD CD_CABO_DISTR ID_QTD_FASE"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="40"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="48"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 COMP_MODULO_Left"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 COMP_MODULO_Right"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 StringPadder_Output"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="37"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="2"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="Componente_Modulo"
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="2251.76 274.881"
+#!   DOC_TOP_LEFT="-1125.88 -146.69"
+#!   FME_DOCUMENT_GUID=""
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   HISTORY=""
+#!   IS_VISIBLE="true"
+#!   LAST_SAVE_BUILD=""
+#!   LAST_SAVE_DATE=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="Componente_Modulo"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-1165.64 225.002"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR DS_MODULO Ds Modulo:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;DS_MODULO&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR CD_MATERIAL Cd Material:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;CD_MATERIAL&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR CD_SERVICO Cd Servico:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;CD_SERVICO&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1000"
+#!   POSITION="-571.87701451843623 128.19141966886582"
+#!   BOUNDING_RECT="-571.87701451843623 128.19141966886582 -1 -1"
+#!   ORDER="500000000000023"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="DS_MODULO DS_MODULO AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="COMP_MODULO"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="SQLExecutor"
+#!   VERSION="8"
+#!   POSITION="9.3787980396896273 8.1914196688658194"
+#!   BOUNDING_RECT="9.3787980396896273 8.1914196688658194 -1 -1"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Initiator Attributes if Conflict"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="ID_COMPONENTE_MODULO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;Connection:,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_NAMED_CONNECTION" PARM_VALUE="Modulo&lt;space&gt;Construtivo&lt;space&gt;-&lt;space&gt;Homol"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;SEQ_ID_COMPONENTE_MODULO.NEXTVAL&lt;space&gt;as&lt;space&gt;ID_COMPONENTE_MODULO&lt;space&gt;FROM&lt;space&gt;DUAL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="StringPadder"
+#!   VERSION="3"
+#!   POSITION="571.88442309593938 -128.18992414457261"
+#!   BOUNDING_RECT="571.88442309593938 -128.18992414457261 -1 -1"
+#!   ORDER="500000000000025"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18552"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_COMPONENTE_MODULO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="BLANK_ATTRIBUTE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="PADCHAR" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SIDE" PARM_VALUE="Left"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="CD_SERVICO CD_MATERIAL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WIDTH" PARM_VALUE="18"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringPadder"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="COMP_MODULO_Left"
+#!   POSITION="-1125.8770145184362 109.69141966886582"
+#!   BOUNDING_RECT="-1125.8770145184362 109.69141966886582 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" ATTR_VALUE="$(DS_MODULO)" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" ATTR_VALUE="$(CD_MATERIAL)" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" ATTR_VALUE="$(CD_SERVICO)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="COMP_MODULO_Right"
+#!   POSITION="-1125.8770145184362 -33.308580331134181"
+#!   BOUNDING_RECT="-1125.8770145184362 -33.308580331134181 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="DS_MODULO" ATTR_VALUE="$(DS_MODULO)" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MATERIAL" ATTR_VALUE="$(CD_MATERIAL)" />
+#!     <XFORM_ATTR ATTR_NAME="CD_SERVICO" ATTR_VALUE="$(CD_SERVICO)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="4"
+#!   NAME="StringPadder_Output"
+#!   POSITION="1125.8844230959394 -146.68992414457261"
+#!   BOUNDING_RECT="1125.8844230959394 -146.68992414457261 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_XLSXR_3,XLSXR_IN_MANYFILE_XLSXR_3,XLSXR_IN_ADVANCED_XLSXR_3,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_3,XLSXR_IN_READ_BLANK_AS_XLSXR_3,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_3,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_3,SourceDataset_XLSXR_2,XLSXR_IN_MANYFILE_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2,DestDataset_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1
+DEFAULT_MACRO SourceDataset_XLSXR $(FME_MF_DIR)espec_amarracao.xlsx
+GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+DEFAULT_MACRO SourceDataset_XLSXR_5 $(FME_MF_DIR)modulo_componente_amarracao.xlsx
+GUI MULTIFILE SourceDataset_XLSXR_5 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_XLSXR_5)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR_5' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} XLSXR
+MULTI_READER_KEYWORD{0} XLSXR_3
+MULTI_READER_GEN_DIRECTIVES{0} EXPAND_MERGED_CELLS,Yes,UPDATE_FEATURE_TYPES,yes,EXCEL_COL_NAMES,YES,USE_SCHEMA_OTHER_FILES,No,CASE_SENSITIVE_FEATURE_TYPES,YES,SCAN_SCHEMA_IF_DYNAMIC,Yes,READ_BLANK_AS,Missing,SCHEMA,Dados<comma>0<lt>comma<gt>DS_MODULO<lt>comma<gt>char<lt>comma<gt>33<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>CD_CABO_DISTR<lt>comma<gt>char<lt>comma<gt>24<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt>ID_TIPO_AMARRACAO<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt>ID_QTD<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>4<lt>comma<gt>ID_QTD_FASE<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt>C:<lt>solidus<gt>temp<lt>solidus<gt>mc<lt>solidus<gt>espec_amarracao.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>571<lt>quote<gt><lt>comma<gt>TAB_AUXILIAR<lt>comma<gt>NO<lt>comma<gt>NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES,CONFIGURATION_DATASET,C:<solidus>temp<solidus>mc<solidus>espec_amarracao.xlsx,FORCE_DATETIME,NO,ALLOW_DOLLAR_SIGNS,YES,XLSXR_EXPOSE_FORMAT_ATTRS,,MANYFILE,,EXPOSE_ATTRS_GROUP,,ADVANCED,FME_DISCLOSURE_OPEN,TABLELIST,Dados
+MULTI_READER_TYPE{1} XLSXR
+MULTI_READER_KEYWORD{1} XLSXR_2
+MULTI_READER_GEN_DIRECTIVES{1} SCHEMA,Dados<comma>0<lt>comma<gt>DS_MODULO<lt>comma<gt>char<lt>comma<gt>45<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>CD_MATERIAL<lt>comma<gt>number<lt>comma<gt>6<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt>CD_SERVICO<lt>comma<gt>number<lt>comma<gt>7<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt>QT_COMPONENTE_MODULO<lt>comma<gt>number<lt>comma<gt>6<lt>comma<gt>4<lt>comma<gt><lt>comma<gt>4<lt>comma<gt>ID_OPERACAO<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt>C:<lt>solidus<gt>temp<lt>solidus<gt>mc<lt>solidus<gt>modulo_componente_condutores.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>376<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<lt>comma<gt>NO,XLSXR_EXPOSE_FORMAT_ATTRS,,FORCE_DATETIME,NO,CASE_SENSITIVE_FEATURE_TYPES,YES,ADVANCED,FME_DISCLOSURE_OPEN,SCAN_SCHEMA_IF_DYNAMIC,Yes,EXPAND_MERGED_CELLS,Yes,READ_BLANK_AS,Missing,MANYFILE,,UPDATE_FEATURE_TYPES,yes,_MERGE_SCHEMAS,YES,TABLELIST,Dados,USE_SCHEMA_OTHER_FILES,No,CONFIGURATION_DATASET,C:<solidus>temp<solidus>mc<solidus>modulo_componente_condutores.xlsx,EXPOSE_ATTRS_GROUP,,EXCEL_COL_NAMES,YES,ALLOW_DOLLAR_SIGNS,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} ORACLE_NONSPATIAL
+MULTI_WRITER_KEYWORD{0} ORACLE_NONSPATIAL_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_3
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_3
+DEFAULT_MACRO SourceDataset_XLSXR_3 $(SourceDataset_XLSXR)
+GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_3 C:/temp/mc/espec_amarracao.xlsx
+XLSXR_3_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_3)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_3 YES
+XLSXR_3_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_3 NO
+XLSXR_3_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_MANYFILE_XLSXR_3 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_MANYFILE_XLSXR_3 XLSXR_IN_USE_SCHEMA_OTHER_FILES Multiple File Parameters
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_3 No
+XLSXR_3_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_3 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_3 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_3%XLSXR_IN_READ_BLANK_AS_XLSXR_3%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_3 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_3 Yes
+XLSXR_3_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_3)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_3 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_3 Missing
+XLSXR_3_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_3)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_3 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_3 Yes
+XLSXR_3_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_3)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_3 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_3 
+XLSXR_3_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_3 Yes
+XLSXR_3_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_3 YES
+XLSXR_3_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_3)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_3 YES
+XLSXR_3_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_3)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_3 
+XLSXR_3_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_3)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_3 DEFLINE
+XLSXR_3_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_3)"
+# ============================================================================ 
+XLSXR_3_GENERATE_FME_BUILD_NUM 18552
+XLSXR_3_DATASET "$(SourceDataset_XLSXR_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_2
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_2
+DEFAULT_MACRO SourceDataset_XLSXR_2 $(SourceDataset_XLSXR_5)
+GUI MULTIFILE SourceDataset_XLSXR_2 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_2 C:/temp/mc/modulo_componente_condutores.xlsx
+XLSXR_2_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_2)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_2 YES
+XLSXR_2_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_2 NO
+XLSXR_2_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_MANYFILE_XLSXR_2 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_MANYFILE_XLSXR_2 XLSXR_IN_USE_SCHEMA_OTHER_FILES Multiple File Parameters
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_2 No
+XLSXR_2_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_2 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_2 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2%XLSXR_IN_READ_BLANK_AS_XLSXR_2%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2 Yes
+XLSXR_2_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_2 Missing
+XLSXR_2_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_2)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_2 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Yes
+XLSXR_2_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2 
+XLSXR_2_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_2 Yes
+XLSXR_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_2 YES
+XLSXR_2_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_2)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_2 YES
+XLSXR_2_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_2)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2 
+XLSXR_2_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_2 DEFLINE
+XLSXR_2_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_2)"
+# ============================================================================ 
+XLSXR_2_GENERATE_FME_BUILD_NUM 18552
+XLSXR_2_DATASET "$(SourceDataset_XLSXR_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ORACLE_NONSPATIAL_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_1
+DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_1 Modulo<space>Construtivo<space>-<space>Homol
+GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_NONSPATIAL_1 FMT:ORACLE_NONSPATIAL Connection:
+ORACLE_NONSPATIAL_1_SERVER_TYPE ORACLE8i
+# New non-spatial Oracle Writers support case sensitive table names.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_1 NO
+ORACLE_NONSPATIAL_1_UPPER_CASE_WRITER_TABLE_NAMES "$(ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_1)"
+# ==============================================================================
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_OUT_NAMED_CONNECTION%ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 Database Connection
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_WORKSPACE "$(ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1)"
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 YES
+ORACLE_NONSPATIAL_1_PERSISTENT_CONNECTION "$(ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 YES%NO Persistent Connection:
+# ==============================================================================
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 Advanced
+# ============================================================================
+# The following option specifies which feature number the writer should actually
+# start writing features to the database on. This should normally be zero, but
+# can be changed if a previous translation is interrupted.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1 0
+ORACLE_NONSPATIAL_1_START_TRANSACTION "$(ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1 Transaction to Start Writing at:
+# ============================================================================
+# The following specifies how many features will be written to the database in
+# on each bulk write.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1 1
+ORACLE_NONSPATIAL_1_CHUNK_SIZE "$(ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1 Bulk Write Size:
+# ============================================================================
+# The following specifies how many features will be written to the database in
+# each transaction.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1 1
+ORACLE_NONSPATIAL_1_TRANSACTION_INTERVAL "$(ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1 Features Per Transaction
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# ORACLE table.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_BEGIN_SQL{0} "$(ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run Before Write
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# ORACLE tables.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_END_SQL{0} "$(ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run After Write
+# ==============================================================================
+# The following specifies whether rows written to the writer's tables have
+# to adhere strictly to the destination feature type. When 'No' or 'Warn',
+# character columns are truncated to fit and other conversion problems end up
+# inserting NULL values; if STRICT_ATTR_CONVERSION is 'Yes', rows containing
+# such problems will be logged and not written to the tables.
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 No
+ORACLE_NONSPATIAL_1_STRICT_ATTR_CONVERSION "$(ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL CHOICE ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 Yes%No%Warn Enforce Strict Attribute Conversion:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_1 FEATURE
+ORACLE_NONSPATIAL_1_COORDINATE_SYSTEM_GRANULARITY "$(ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_1)"
+# ============================================================================ 
+ORACLE_NONSPATIAL_1_GENERATE_FME_BUILD_NUM 18552
+# ==============================================================================
+# The following specifies the name of the Oracle Workspace that we should go
+# to when writing tables. Redefining just the GUI line as we can't bring up the
+# Oracle workspace picker in non-Settings box contexts.
+GUI OPTIONAL TEXT ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1 Oracle Workspace:
+ORACLE_NONSPATIAL_1_DATASET "$(DestDataset_ORACLE_NONSPATIAL_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)CARGA_AMARRACAO.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_3 XLSXR_3
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_2 XLSXR_2
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_1
+# -------------------------------------------------------------------------
+
+XLSXR_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+XLSXR_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME CARGA_AMARRACAO
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE XLSXR XLSXR_3::Dados multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_3) TO FME_GENERIC ::Dados ALIAS_GEOMETRY    ROUTE XLSXR XLSXR_2::Dados multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_2) TO FME_GENERIC ::Dados ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+XLSXR_3_MERGE_DEF XLSXR_3::Dados EXACT Dados DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_header_row,0,xlsx_schema_start_col,0,xlsx_schema_end_row,0,xlsx_schema_end_col,0,fme_attribute_reading,defined,DS_MODULO,char<openparen>33<closeparen>,CD_CABO_DISTR,char<openparen>24<closeparen>,ID_TIPO_AMARRACAO,number<openparen>2<comma>0<closeparen>,ID_QTD,number<openparen>2<comma>0<closeparen>,ID_QTD_FASE,number<openparen>2<comma>0<closeparen>
+XLSXR_2_MERGE_DEF XLSXR_2::Dados EXACT Dados DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_header_row,0,xlsx_schema_start_col,0,xlsx_schema_end_row,0,xlsx_schema_end_col,0,fme_attribute_reading,defined,DS_MODULO,char<openparen>45<closeparen>,CD_MATERIAL,number<openparen>6<comma>0<closeparen>,CD_SERVICO,number<openparen>7<comma>0<closeparen>,QT_COMPONENTE_MODULO,number<openparen>6<comma>4<closeparen>,ID_OPERACAO,number<openparen>2<comma>0<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Dados (XLSXR_2) Splitter"    INPUT FEATURE_TYPE Dados      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_2)    OUTPUT FEATURE_TYPE Dados_XLSXR_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Dados (XLSXR_3) Splitter"    INPUT FEATURE_TYPE Dados      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_3)    OUTPUT FEATURE_TYPE Dados_XLSXR_3
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter_2    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Dados_XLSXR_3    KEY_ATTRIBUTES { DS_MODULO ID_TIPO_AMARRACAO ID_QTD CD_CABO_DISTR ID_QTD_FASE }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_2_UNIQUE
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder    INPUT  FEATURE_TYPE DuplicateFilter_2_UNIQUE    OUTPUT SORTED FEATURE_TYPE FeatureHolder_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureHolder OUTPUT Splitter"   INPUT FEATURE_TYPE FeatureHolder_OUTPUT   OUTPUT FEATURE_TYPE FeatureHolder_OUTPUT_0_KLgW8kDgBx4=   OUTPUT FEATURE_TYPE FeatureHolder_OUTPUT_1_UIyMFea60+w=
+# -------------------------------------------------------------------------
+DEFAULT_MACRO Aggregator_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE DS_MODULO} }]
+FACTORY_DEF {*} AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE FeatureHolder_OUTPUT_0_KLgW8kDgBx4=    MODE ONE_LEVEL    GROUP_BY { DS_MODULO }    $(Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY YES    ACCUMULATE_ATTRIBUTES None    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    SEPARATOR <comma>    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Aggregator_AGGREGATE    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "ID_GRUPO_MODULO" "SET_TO" "-7" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+MACRO SQLExecutor_DIRECTIVES REMOVE_SCHEMA_QUALIFIER NO NAMED_CONNECTION Modulo<space>Construtivo<space>-<space>Homol PERSISTENT_CONNECTION YES SHOW_SYSTEM_TABLES NO USE_UNIFIED_DATE_ATTRS YES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SERVER_TYPE ORACLE8i
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    QUERY_SQL            "SELECT<space>SEQ_ID_MODULO.NEXTVAL<space>as<space>ID_MODULO<space>FROM<space>DUAL"    READER_TYPE          ORACLE_NONSPATIAL    READER_DATASET       "Modulo<space>Construtivo<space>-<space>Homol"    COMBINE_ATTRIBUTES   PREFER_QUERY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor RESULT Splitter"   INPUT FEATURE_TYPE SQLExecutor_RESULT   OUTPUT FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=   OUTPUT FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_INITIATOR
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_<Rejected> INPUT FEATURE_TYPE SQLExecutor_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder_4    INPUT  FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=    OUTPUT SORTED FEATURE_TYPE FeatureHolder_4_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureHolder_4 OUTPUT Splitter"   INPUT FEATURE_TYPE FeatureHolder_4_OUTPUT   OUTPUT FEATURE_TYPE FeatureHolder_4_OUTPUT_0_Rr5eapXzuy4=   OUTPUT FEATURE_TYPE FeatureHolder_4_OUTPUT_1_Oh9fPtlZotA=
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder_3    INPUT  FEATURE_TYPE FeatureHolder_4_OUTPUT_1_Oh9fPtlZotA=    OUTPUT SORTED FEATURE_TYPE FeatureHolder_3_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureHolder_3 OUTPUT Splitter"   INPUT FEATURE_TYPE FeatureHolder_3_OUTPUT   OUTPUT FEATURE_TYPE FeatureHolder_3_OUTPUT_0_igfya6o5SYg=   OUTPUT FEATURE_TYPE FeatureHolder_3_OUTPUT_1_tu13QKOuTSg=
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME ESPEC_MOD    INPUT LEFT FEATURE_TYPE FeatureHolder_OUTPUT_1_UIyMFea60+w=    INPUT RIGHT FEATURE_TYPE FeatureHolder_3_OUTPUT_1_tu13QKOuTSg=    JOIN_MODE Inner    JOIN_KEYS DS_MODULO DS_MODULO AUTO    ATTR_CONFLICT_RES USE_LEFT    GEOMETRY_HANDLING USE_LEFT    OUTPUT JOINED FEATURE_TYPE ESPEC_MOD_JOINED    OUTPUT <REJECTED> FEATURE_TYPE ESPEC_MOD_<REJECTED>
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME ESPEC_MOD_<Rejected> INPUT FEATURE_TYPE ESPEC_MOD_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ESPEC_MOD<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+MACRO SQLExecutor_2_DIRECTIVES USE_UNIFIED_DATE_ATTRS YES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes PERSISTENT_CONNECTION YES SERVER_TYPE ORACLE8i NAMED_CONNECTION Modulo<space>Construtivo<space>-<space>Homol SHOW_SYSTEM_TABLES NO REMOVE_SCHEMA_QUALIFIER NO
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_2    INPUT  FEATURE_TYPE ESPEC_MOD_JOINED    QUERY_SQL            "SELECT<space>SEQ_ID_ESPEC_MODULO.NEXTVAL<space>as<space>ID_ESPEC_MODULO<space>FROM<space>DUAL"    READER_TYPE          ORACLE_NONSPATIAL    READER_DATASET       "Modulo<space>Construtivo<space>-<space>Homol"    COMBINE_ATTRIBUTES   PREFER_QUERY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_2_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_2_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_2)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_2_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_2_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_2 INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_2_INITIATOR
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_2_<Rejected> INPUT FEATURE_TYPE SQLExecutor_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+# If we're doing LAST N features, then the multiplier comes in as 0.
+# If we're doing First N, multiplier is -1.
+# For RANDOM, we need to treat LAST N as if it was first N (i.e. have a -1)
+# That is what the ? : does in the rate multiplier.
+INCLUDE [ if { {-1} == {0} && {ORIGINAL} == {ORIGINAL} } {              puts "MACRO REAL_MODE LAST"; 	         puts "MACRO REAL_RATE 1"; 	      } else {              puts "MACRO REAL_MODE ORIGINAL";              puts "MACRO REAL_RATE [expr 1 * ( -1 ? -1 : -1 ) ]"; 	      } ]
+FACTORY_DEF {*} SamplingFactory    FACTORY_NAME Sampler    COMMAND_PARM_EVALUATION SINGLE_PASS    SAMPLE_RATE $(REAL_RATE)    SAMPLE_ORDER $(REAL_MODE)    GROUP_BY { fme_feature_type }    INPUT  FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=    OUTPUT SAMPLED FEATURE_TYPE ___SAMPLED___
+# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
+# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
+FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_Sampled    INPUT FEATURE_TYPE ___SAMPLED___    OUTPUT FEATURE_TYPE Sampler_SAMPLED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Sampler SAMPLED Splitter"   INPUT FEATURE_TYPE Sampler_SAMPLED   OUTPUT FEATURE_TYPE Sampler_SAMPLED_0_qKSqHZTJ/+c=   OUTPUT FEATURE_TYPE Sampler_SAMPLED_1_F3CResnX36E=   OUTPUT FEATURE_TYPE Sampler_SAMPLED_2_Dut0lDNL38c=
+# -------------------------------------------------------------------------
+MACRO DEL_MODULO_DIRECTIVES NAMED_CONNECTION,Modulo<lt>space<gt>Construtivo<lt>space<gt>-<lt>space<gt>Homol,REMOVE_SCHEMA_QUALIFIER,NO,SHOW_SYSTEM_TABLES,NO,USE_UNIFIED_DATE_ATTRS,YES,SERVER_TYPE,ORACLE8i,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,PERSISTENT_CONNECTION,YES
+DEFAULT_MACRO DEL_MODULO_ATTRS_TO_EVALUATE DEFAULT_MACRO DEL_MODULO_KEY_COLUMNS
+INCLUDE [    set toEvaluate {};    set keyColumns {};    if { {WHERE} eq {KEYS} } {       foreach {columnName attr} [split {} {;}] {          set attrExp $attr;          if [regexp {@EvaluateExpression\([^)]*STRING_ENCODED,(.*),.+\)} $attrExp -> unwrapped] {             lappend toEvaluate ATTR $columnName $unwrapped;          } else {             lappend toEvaluate ATTR $columnName $attr;          };          lappend keyColumns $columnName;       };    };    puts "MACRO DEL_MODULO_ATTRS_TO_EVALUATE  [join $toEvaluate { }]";    puts "MACRO DEL_MODULO_KEY_COLUMNS [join $keyColumns {,}]"; ]
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME DEL_MODULO_AttributeEvaluator    INPUT  FEATURE_TYPE Sampler_SAMPLED_2_Dut0lDNL38c=    ATTRSET_PROPAGATE_MISSING YES    $(DEL_MODULO_ATTRS_TO_EVALUATE)    OUTPUT OUTPUT FEATURE_TYPE "DEL_MODULO_DELETE_FEATURES"
+FACTORY_DEF * DatabaseUpdaterFactory    FACTORY_NAME DEL_MODULO    INPUT DELETE FEATURE_TYPE "DEL_MODULO_DELETE_FEATURES"    DBUPDATER_FORMAT_SHORT_NAME    ORACLE_NONSPATIAL    DBUPDATER_DATASET              "Modulo<space>Construtivo<space>-<space>Homol"    DBUPDATER_CONNECTION_PARAMS    $(DEL_MODULO_DIRECTIVES)    DBUPDATER_TABLE                "MODULO"    DBUPDATER_KEY_COLUMNS          $(DEL_MODULO_KEY_COLUMNS)    DBUPDATER_WHERE_CLAUSE         "@EvaluateExpression(FDIV,STRING_ENCODED,ID_GRUPO_MODULO<space>=<space><at>Value<openparen>ID_GRUPO_MODULO<closeparen>,DEL_MODULO)"
+# -------------------------------------------------------------------------
+MACRO DEL_ESPEC_MOD_AMARRACAO_DIRECTIVES SERVER_TYPE,ORACLE8i,REMOVE_SCHEMA_QUALIFIER,NO,PERSISTENT_CONNECTION,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SHOW_SYSTEM_TABLES,NO,NAMED_CONNECTION,Modulo<lt>space<gt>Construtivo<lt>space<gt>-<lt>space<gt>Homol,USE_UNIFIED_DATE_ATTRS,YES
+DEFAULT_MACRO DEL_ESPEC_MOD_AMARRACAO_ATTRS_TO_EVALUATE DEFAULT_MACRO DEL_ESPEC_MOD_AMARRACAO_KEY_COLUMNS
+INCLUDE [    set toEvaluate {};    set keyColumns {};    if { {WHERE} eq {KEYS} } {       foreach {columnName attr} [split {} {;}] {          set attrExp $attr;          if [regexp {@EvaluateExpression\([^)]*STRING_ENCODED,(.*),.+\)} $attrExp -> unwrapped] {             lappend toEvaluate ATTR $columnName $unwrapped;          } else {             lappend toEvaluate ATTR $columnName $attr;          };          lappend keyColumns $columnName;       };    };    puts "MACRO DEL_ESPEC_MOD_AMARRACAO_ATTRS_TO_EVALUATE  [join $toEvaluate { }]";    puts "MACRO DEL_ESPEC_MOD_AMARRACAO_KEY_COLUMNS [join $keyColumns {,}]"; ]
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME DEL_ESPEC_MOD_AMARRACAO_AttributeEvaluator    INPUT  FEATURE_TYPE Sampler_SAMPLED_1_F3CResnX36E=    ATTRSET_PROPAGATE_MISSING YES    $(DEL_ESPEC_MOD_AMARRACAO_ATTRS_TO_EVALUATE)    OUTPUT OUTPUT FEATURE_TYPE "DEL_ESPEC_MOD_AMARRACAO_DELETE_FEATURES"
+FACTORY_DEF * DatabaseUpdaterFactory    FACTORY_NAME DEL_ESPEC_MOD_AMARRACAO    INPUT DELETE FEATURE_TYPE "DEL_ESPEC_MOD_AMARRACAO_DELETE_FEATURES"    DBUPDATER_FORMAT_SHORT_NAME    ORACLE_NONSPATIAL    DBUPDATER_DATASET              "Modulo<space>Construtivo<space>-<space>Homol"    DBUPDATER_CONNECTION_PARAMS    $(DEL_ESPEC_MOD_AMARRACAO_DIRECTIVES)    DBUPDATER_TABLE                "MODULO_CONSTRUTIVO.ESPEC_MOD_AMARRACAO"    DBUPDATER_KEY_COLUMNS          $(DEL_ESPEC_MOD_AMARRACAO_KEY_COLUMNS)    DBUPDATER_WHERE_CLAUSE         "@EvaluateExpression(FDIV,STRING_ENCODED,ID_MODULO<space>in<space><openparen>SELECT<space>ID_MODULO<space>FROM<space>modulo<space>WHERE<space>ID_GRUPO_MODULO<space>=<space><at>Value<openparen>ID_GRUPO_MODULO<closeparen><closeparen>,DEL_ESPEC_MOD_AMARRACAO)"
+# -------------------------------------------------------------------------
+MACRO DEL_COMPONENTE_MODULO_DIRECTIVES NAMED_CONNECTION,Modulo<lt>space<gt>Construtivo<lt>space<gt>-<lt>space<gt>Homol,REMOVE_SCHEMA_QUALIFIER,NO,SHOW_SYSTEM_TABLES,NO,USE_UNIFIED_DATE_ATTRS,YES,SERVER_TYPE,ORACLE8i,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,PERSISTENT_CONNECTION,YES
+DEFAULT_MACRO DEL_COMPONENTE_MODULO_ATTRS_TO_EVALUATE DEFAULT_MACRO DEL_COMPONENTE_MODULO_KEY_COLUMNS
+INCLUDE [    set toEvaluate {};    set keyColumns {};    if { {WHERE} eq {KEYS} } {       foreach {columnName attr} [split {} {;}] {          set attrExp $attr;          if [regexp {@EvaluateExpression\([^)]*STRING_ENCODED,(.*),.+\)} $attrExp -> unwrapped] {             lappend toEvaluate ATTR $columnName $unwrapped;          } else {             lappend toEvaluate ATTR $columnName $attr;          };          lappend keyColumns $columnName;       };    };    puts "MACRO DEL_COMPONENTE_MODULO_ATTRS_TO_EVALUATE  [join $toEvaluate { }]";    puts "MACRO DEL_COMPONENTE_MODULO_KEY_COLUMNS [join $keyColumns {,}]"; ]
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME DEL_COMPONENTE_MODULO_AttributeEvaluator    INPUT  FEATURE_TYPE Sampler_SAMPLED_0_qKSqHZTJ/+c=    ATTRSET_PROPAGATE_MISSING YES    $(DEL_COMPONENTE_MODULO_ATTRS_TO_EVALUATE)    OUTPUT OUTPUT FEATURE_TYPE "DEL_COMPONENTE_MODULO_DELETE_FEATURES"
+FACTORY_DEF * DatabaseUpdaterFactory    FACTORY_NAME DEL_COMPONENTE_MODULO    INPUT DELETE FEATURE_TYPE "DEL_COMPONENTE_MODULO_DELETE_FEATURES"    DBUPDATER_FORMAT_SHORT_NAME    ORACLE_NONSPATIAL    DBUPDATER_DATASET              "Modulo<space>Construtivo<space>-<space>Homol"    DBUPDATER_CONNECTION_PARAMS    $(DEL_COMPONENTE_MODULO_DIRECTIVES)    DBUPDATER_TABLE                "MODULO_CONSTRUTIVO.COMPONENTE_MODULO"    DBUPDATER_KEY_COLUMNS          $(DEL_COMPONENTE_MODULO_KEY_COLUMNS)    DBUPDATER_WHERE_CLAUSE         "@EvaluateExpression(FDIV,STRING_ENCODED,ID_MODULO<space>in<space><openparen>SELECT<space>ID_MODULO<space>FROM<space>modulo<space>WHERE<space>ID_GRUPO_MODULO<space>=<space><at>Value<openparen>ID_GRUPO_MODULO<closeparen><closeparen>,DEL_COMPONENTE_MODULO)"
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Dados_XLSXR_2    KEY_ATTRIBUTES { CD_SERVICO CD_MATERIAL ID_OPERACAO DS_MODULO }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder_2    INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE    OUTPUT SORTED FEATURE_TYPE FeatureHolder_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Componente_Modulo COMP_MODULO_Left Input Collector"   INPUT FEATURE_TYPE FeatureHolder_2_OUTPUT   OUTPUT FEATURE_TYPE Componente_Modulo_COMP_MODULO_Left
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Componente_Modulo COMP_MODULO_Right Input Collector"   INPUT FEATURE_TYPE FeatureHolder_3_OUTPUT_0_igfya6o5SYg=   OUTPUT FEATURE_TYPE Componente_Modulo_COMP_MODULO_Right
+MACRO Componente_Modulo_WORKSPACE_NAME Componente_Modulo
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_XFORMER_NAME Componente_Modulo
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(Componente_Modulo_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_SUB_DOC_NAME Componente_Modulo
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_DS_MODULO <at>Value<openparen>DS_MODULO<closeparen>
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_CD_MATERIAL <at>Value<openparen>CD_MATERIAL<closeparen>
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_CD_SERVICO <at>Value<openparen>CD_SERVICO<closeparen>
+DEFAULT_MACRO Componente_Modulo_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Componente_Modulo_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Componente_Modulo_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Left1558622735 Input Splitter"   INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Left"   OUTPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Left" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,DS_MODULO,$($(Componente_Modulo_WORKSPACE_NAME)_DS_MODULO),CD_MATERIAL,$($(Componente_Modulo_WORKSPACE_NAME)_CD_MATERIAL),CD_SERVICO,$($(Componente_Modulo_WORKSPACE_NAME)_CD_SERVICO), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Right1558622735 Input Splitter"   INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Right"   OUTPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Right" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,DS_MODULO,$($(Componente_Modulo_WORKSPACE_NAME)_DS_MODULO),CD_MATERIAL,$($(Componente_Modulo_WORKSPACE_NAME)_CD_MATERIAL),CD_SERVICO,$($(Componente_Modulo_WORKSPACE_NAME)_CD_SERVICO), FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME $(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO    INPUT LEFT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Left"    INPUT RIGHT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_Right"    JOIN_MODE Inner    JOIN_KEYS DS_MODULO DS_MODULO AUTO    ATTR_CONFLICT_RES USE_LEFT    GEOMETRY_HANDLING USE_LEFT    OUTPUT JOINED FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_JOINED"    OUTPUT <REJECTED> FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_<REJECTED>"
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_<Rejected>" INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_<REJECTED>"  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Componente_Modulo_COMP_MODULO<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+MACRO $(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_DIRECTIVES USE_UNIFIED_DATE_ATTRS YES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes PERSISTENT_CONNECTION YES SERVER_TYPE ORACLE8i NAMED_CONNECTION Modulo<space>Construtivo<space>-<space>Homol SHOW_SYSTEM_TABLES NO REMOVE_SCHEMA_QUALIFIER NO
+FACTORY_DEF * QueryFactory    FACTORY_NAME $(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3    INPUT  FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_COMP_MODULO_JOINED"    QUERY_SQL            "SELECT<space>SEQ_ID_COMPONENTE_MODULO.NEXTVAL<space>as<space>ID_COMPONENTE_MODULO<space>FROM<space>DUAL"    READER_TYPE          ORACLE_NONSPATIAL    READER_DATASET       "Modulo<space>Construtivo<space>-<space>Homol"    COMBINE_ATTRIBUTES   PREFER_QUERY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $($(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_RESULT"        @SupplyAttributes(fme_feature_type,$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3)    OUTPUT QUERY FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_INITIATOR"    OUTPUT READER_ERROR FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_<REJECTED>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3 INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_INITIATOR"
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_<Rejected>" INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_<REJECTED>"  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Componente_Modulo_SQLExecutor_3<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+Tcl2 proc $(Componente_Modulo_WORKSPACE_NAME)_StringPadder_padder {width padChar} {    set attrs [split {CD_SERVICO CD_MATERIAL} { }];    set funcName "PadLeft";    if { [string compare {LEFT} {RIGHT}] == 0 } {     set funcName "PadRight";    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    set hasAttr 0;    foreach attr $attrs {     if {![FME_IsAttributeNull $attr]} {         set hasAttr 1;         set funcAttr $attr;         if { [string first "<quote>" $attr] != -1 }         {             set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];             append funcAttr "<quote>";             set funcAttr "<quote>"$funcAttr;         };         if { [string compare $padChar {<closeparen>}] == 0 } {             set padChar "<quote><closeparen><quote>";         } elseif { [string compare $padChar {<quote>}] == 0 } {             set padChar "<quote><backslash><quote><quote>";         } elseif { [string compare $padChar {<openparen>}] == 0 } {             set padChar "<quote><openparen><quote>";         };         set funcCall [join [list "<at>" $funcName "<openparen><at>Value<openparen>" $funcAttr "<closeparen><comma>" $width "<comma>" $padChar "<comma>FALSE<closeparen>"] {}];         lappend parmList $attr;         lappend parmList $funcCall;      };    };    if {$hasAttr > 0} {       lappend parmList {$(Componente_Modulo_WORKSPACE_NAME)_StringPadder};       eval FME_Execute $parmList;    }; }
+FACTORY_DEF * TestFactory    FACTORY_NAME $(Componente_Modulo_WORKSPACE_NAME)_StringPadder_CheckWidth    INPUT  FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_SQLExecutor_3_RESULT"    TEST "18" TYPE NUM ENCODED    OUTPUT FAILED FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_<REJECTED>"       fme_rejection_code "INVALID_PARAMETER_DESIRED_STRING_LENGTH"    OUTPUT PASSED FEATURE_TYPE __toOutput__
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(Componente_Modulo_WORKSPACE_NAME)_StringPadder_StringPadder    INPUT FEATURE_TYPE __toOutput__    OUTPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_OUTPUT"         @Tcl2("$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_padder {18} {0} ")
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_<Rejected>" INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_<REJECTED>"  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Componente_Modulo_StringPadder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_Output1558622735 Output Collector"   INPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_OUTPUT"   OUTPUT FEATURE_TYPE "$(Componente_Modulo_WORKSPACE_NAME)_StringPadder_Output"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Componente_Modulo_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Componente_Modulo StringPadder_Output Output Renamer/Nuker"   INPUT FEATURE_TYPE Componente_Modulo_StringPadder_Output   OUTPUT FEATURE_TYPE Componente_Modulo_StringPadder_Output
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureHolder_4_OUTPUT_0_Rr5eapXzuy4= TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>MODULO<closeparen> GEOMETRY    ROUTE FME_GENERIC SQLExecutor_2_RESULT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>ESPEC_MOD_AMARRACAO<closeparen> GEOMETRY    ROUTE FME_GENERIC Componente_Modulo_StringPadder_Output TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>COMPONENTE_MODULO<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ORACLE_NONSPATIAL_1_DEF MODULO   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   ID_GRUPO_MODULO              number   DS_MODULO                    varchar2(120)   ID_MODULO                    number
+# -------------------------------------------------------------------------
+ORACLE_NONSPATIAL_1_DEF ESPEC_MOD_AMARRACAO   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   ID_TIPO_AMARRACAO            number   ID_QTD_FASE                  number   ID_QTD                       number   ID_MODULO                    number   ID_ESPEC_MODULO              number   CD_CABO_DISTR                varchar2(40)
+# -------------------------------------------------------------------------
+ORACLE_NONSPATIAL_1_DEF COMPONENTE_MODULO   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   CD_MATERIAL                  varchar2(18)   CD_SERVICO                   varchar2(18)   QT_COMPONENTE_MODULO         number(9,4)   ID_OPERACAO                  number   ID_GRUPO_MODULO              number   ID_MODULO                    number   ID_COMPONENTE_MODULO         number

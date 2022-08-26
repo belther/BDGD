@@ -1,0 +1,11 @@
+CREATE VIEW VG_LINHA_TRMSS_GENESIS AS
+select TO_NUMBER(SAP.nr_linha_trmss) nr_linha_trmss,
+       ltr.ds_linha_trmss,
+       count(*) qtd_seg_at
+
+from pri_vao_ltr ltr
+    LEFT JOIN TAB_SAP_LINHA_TRMSS SAP
+        ON ltr.DS_LINHA_TRMSS = SAP.DS_LINHA_TRMSS
+where ltr.id != 16840 AND ltr.DS_LINHA_TRMSS IS NOT NULL
+group by SAP.nr_linha_trmss,
+         ltr.ds_linha_trmss;

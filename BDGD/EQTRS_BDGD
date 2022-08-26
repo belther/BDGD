@@ -1,0 +1,89 @@
+SELECT S.EQUIPAMENTO AS "COD_ID",
+         '5697' AS "DIST", 
+         DECODE(TERCIARIO.PAC1, NULL, (DECODE(PRIMARIO_SECUNDARIO.PAC1, NULL, 'D1-'||S.EQUIPAMENTO, 'SE-' || PRIMARIO_SECUNDARIO.PAC1)), 'SE-' || TERCIARIO.PAC1) AS "PAC_1", 
+         DECODE(TERCIARIO.PAC2_FID, NULL, (DECODE(PRIMARIO_SECUNDARIO.PAC2_FID, NULL, 'D2-'||S.EQUIPAMENTO, 'SE-' || PRIMARIO_SECUNDARIO.PAC2_FID)), 'SE-' || TERCIARIO.PAC2_FID) AS "PAC_2", 
+         DECODE(TERCIARIO.PAC3, NULL, 'D3-'||S.EQUIPAMENTO, 'SE-'||TERCIARIO.PAC3) AS "PAC_3", 
+         TCLATEN.COD_ID AS "CLAS_TEN", 
+         TPOTAPRT.COD_ID AS "POT_NOM", 
+         TLIG.COD_ID AS "LIG", 
+         'PD' AS "POS", 
+         0 AS "FLX_INV", 
+         'ABC' AS "FAS_CON", 
+         T1.COD_ID AS "TEN_PRI", 
+         T2.COD_ID AS "TEN_SEC", 
+         NVL(T3.COD_ID, '0') AS "TEN_TER", 
+         S.ODI AS "ODI", 
+         S.TI AS "TI", 
+         S.CENTRO_MODULAR AS "CM", 
+         S.TUC AS "TUC", 
+         nvl(S.A1,'00') AS "A1", 
+         nvl(S.A2, '00') AS "A2", 
+         nvl(S.A3, '00') AS "A3", 
+         nvl(S.A4, '00') AS "A4", 
+         nvl(S.A5, '00') AS "A5", 
+         nvl(S.A6, '00') AS "A6", 
+         S.IDUC AS "IDUC", 
+         DECODE(S.DATA_IMOB, NULL, 'NIM', 'AT1') AS "SITCONT", 
+         S.DATA_IMOB AS "DAT_IMO", 
+         TRUNC((replace(S.PER_FER, ',', '.')/replace(S.POT_NOM, ',', '.'))/10,3) AS "PER_FER", 
+         TRUNC((replace(S.PER_TOT, ',', '.')/replace(S.POT_NOM, ',', '.'))/10,3) AS "PER_TOT", 
+         REPLACE(S.POT_F01, ',', '.')/1000 AS "POT_F01", REPLACE(S.POT_F02, ',', '.')/1000 AS "POT_F02", 
+         s.local_instalacao AS "DESCR"
+FROM MV_BDGD_SAP S
+LEFT JOIN TCLATEN
+    ON TCLATEN.TEN = S.CLAS_TEN
+LEFT JOIN TPOTAPRT
+    ON TPOTAPRT.POT = S.POT_NOM
+LEFT JOIN TLIG
+    ON TLIG.DESCR = S.LIG
+LEFT JOIN TTEN T1
+    ON T1.TEN = S.TEN_PRI
+LEFT JOIN TTEN T2
+    ON T2.TEN = S.TEN_SEC
+LEFT JOIN TTEN T3
+    ON T3.TEN = S.TEN_TER
+LEFT JOIN 
+    (SELECT PAC1_FID AS "PAC1",
+         PAC2_FID AS "PAC2_FID",
+         PAC2,
+        PAC3_FID AS "PAC3"
+    FROM 
+        (SELECT PAC1_FID,
+         PAC2_FID,
+        PAC2,
+         LAG(PAC1_FID,
+        1,
+        0)
+            OVER (PARTITION BY PAC2_FID
+        ORDER BY  PAC2_FID) AS PAC3_FID
+        FROM BDGD_STAGING.tab_bdgd_sub_conn
+        WHERE PAC2 IN 
+            (SELECT LOCAL_INSTALACAO
+            FROM MV_BDGD_SAP
+            WHERE BDGD = 'EQTRS' ))
+            WHERE PAC3_FID = '0') PRIMARIO_SECUNDARIO
+            ON PRIMARIO_SECUNDARIO.PAC2 = s.local_instalacao
+    LEFT JOIN 
+    (SELECT PAC1_FID AS "PAC1",
+         PAC2_FID AS "PAC2_FID",
+         PAC2,
+        PAC3_FID AS "PAC3"
+    FROM 
+        (SELECT PAC1_FID,
+         PAC2_FID,
+        PAC2,
+         LAG(PAC1_FID,
+        1,
+        0)
+            OVER (PARTITION BY PAC2_FID
+        ORDER BY  PAC2_FID) AS PAC3_FID
+        FROM BDGD_STAGING.tab_bdgd_sub_conn
+        WHERE PAC2 IN 
+            (SELECT LOCAL_INSTALACAO
+            FROM MV_BDGD_SAP
+            WHERE BDGD = 'EQTRS' ))
+            WHERE PAC3_FID <> '0') TERCIARIO
+            ON TERCIARIO.PAC2 = s.local_instalacao
+    WHERE s.bdgd = 'EQTRS'
+        AND S.LOCAL_INSTALACAO LIKE 'SE%'
+        AND TCLATEN.COD_ID >= 11

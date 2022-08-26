@@ -1,0 +1,332 @@
+--drop materialized view mv_bdgd_eqre
+create materialized view mv_bdgd_eqre as
+(
+  SELECT SA.EQUIPAMENTO AS COD_ID,
+         5697 AS DIST,
+        
+        CASE
+        WHEN GEN.PAC_1 IS NULL THEN
+        'D1'||SA.EQUIPAMENTO
+        ELSE CAST (GEN.PAC_1 AS VARCHAR(20))END AS PAC_1,
+        CASE
+        WHEN GEN.PAC_2 IS NULL THEN
+        'D2-'||SA.EQUIPAMENTO
+        ELSE CAST (GEN.PAC_2 AS VARCHAR(20))END AS PAC_2,
+        CASE
+        WHEN A3 =29 THEN
+        16
+        WHEN A3 =33 THEN
+        19
+        WHEN A3 =40 THEN
+        23
+        WHEN A3 =41 THEN
+        24
+        WHEN A3 =49 THEN
+        29
+        WHEN A3 =53 THEN
+        31
+        WHEN A3 =54 THEN
+        32
+        WHEN A3 =55 THEN
+        34
+        WHEN A3 =59 THEN
+        37
+        WHEN A3 =60 THEN
+        38
+        WHEN A3 =61 THEN
+        41
+        WHEN A3 =62 THEN
+        42
+        WHEN A3 =63 THEN
+        43
+        WHEN A3 =92 THEN
+        91
+        ELSE 0
+        END AS POT_NOM, 
+        TIPO_REGULADOR(SA.LOCAL_INSTALACAO) AS TIP_REGU, 
+        1 AS TEN_REG, 
+        COALESCE(LIGF.LIG_FAS,'0')as LIG_FAS_P, 
+        COALESCE(LIGF.LIG_FAS,'0')as LIG_FAS_S,
+        CASE
+        WHEN A4=05 THEN
+        3
+        WHEN A4=07 THEN
+        5
+        WHEN A4=10 THEN
+        12
+        WHEN A4=13 THEN
+        18
+        WHEN A4=16 THEN
+        22
+        WHEN A4=19 THEN
+        23
+        WHEN A4=22 THEN
+        24
+        ELSE 0
+        END AS COR_NOM,
+        CASE
+        WHEN A2=15 THEN
+        13
+        WHEN A2=25 THEN
+        6
+        WHEN A2=34 THEN
+        3
+        ELSE 0
+        END AS REL_TP,
+        CASE
+        WHEN A4=05 THEN
+        44
+        WHEN A4=13 THEN
+        55
+        WHEN A4=22 THEN
+        58
+        WHEN A4=10 THEN
+        53
+        WHEN A4=16 THEN
+        57
+        ELSE 0
+        END AS REL_TC,
+        CASE
+        WHEN SA.GRUPO_DE_PLANEJAMENTO='GRD' THEN
+        '190400'
+        ELSE SA.ODI
+        END AS ODI,
+        CASE
+        WHEN GEN.ID_AREA_OBJETO='U' THEN
+        '40'
+        ELSE '41'
+        END AS TI, '999' AS CM,
+        SA.TUC, 
+        SA.A1, 
+        SA.A2, 
+        SA.A3, 
+        SA.A4, 
+        SA.A5, 
+        COALESCE (SA.A6,'00') AS A6, 
+        SA.IDUC, 
+        DECODE(DATA_IMOB, NULL, 'NIM', 'AT1') AS SITCONT, 
+        data_imob as DAT_IMO,
+        SA.PER_FER, 
+        SA.PER_TOT, 
+        SA.R, 
+        SA.XHL,
+        NVL(ENERGIA.ENE_01, 0) AS ENE_01,
+        NVL(ENERGIA.ENE_02, 0) AS ENE_02,
+        NVL(ENERGIA.ENE_03, 0) AS ENE_03,
+        NVL(ENERGIA.ENE_04, 0) AS ENE_04,
+        NVL(ENERGIA.ENE_05, 0) AS ENE_05,
+        NVL(ENERGIA.ENE_06, 0) AS ENE_06,
+        NVL(ENERGIA.ENE_07, 0) AS ENE_07,
+        NVL(ENERGIA.ENE_08, 0) AS ENE_08,
+        NVL(ENERGIA.ENE_09, 0) AS ENE_09,
+        NVL(ENERGIA.ENE_10, 0) AS ENE_10,
+        NVL(ENERGIA.ENE_11, 0) AS ENE_11,
+        NVL(ENERGIA.ENE_12, 0) AS ENE_12,
+        SA.LOCAL_INSTALACAO AS DESCR
+    FROM MV_BDGD_SAP SA
+    LEFT JOIN BDGD_STAGING.MV_GENESIS_EQRE GEN
+        ON SA.LOCAL_INSTALACAO = GEN.COD_ID
+    LEFT JOIN BDGD_STAGING.TAB_ENERGIA_EQRE ENERGIA
+        ON ENERGIA.DESCR = SA.LOCAL_INSTALACAO
+    INNER JOIN -- Completa o campo LIG_FAS de acordo com q ordem do registro 
+        (SELECT SA.LOCAL_INSTALACAO,
+         SA.EQUIPAMENTO,
+            CASE
+            WHEN RA.RANK= 1 THEN
+            'A'
+            WHEN RA.RANK= 2 THEN
+            'B'
+            WHEN RA.RANK= 3 THEN
+            'C'
+            ELSE '0'
+            END AS LIG_FAS
+        FROM MV_BDGD_SAP SA
+        LEFT JOIN BDGD_STAGING.MV_GENESIS_EQRE GEN
+            ON SA.EQUIPAMENTO = GEN.COD_ID
+        INNER JOIN 
+            (SELECT SA.LOCAL_INSTALACAO,
+         SA.EQUIPAMENTO,
+         RANK()
+                OVER ( PARTITION BY SA.LOCAL_INSTALACAO
+            ORDER BY  SA.EQUIPAMENTO DESC )as RANK
+            FROM MV_BDGD_SAP SA
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO NOT LIKE 'AX-%' 
+            GROUP BY  SA.LOCAL_INSTALACAO,EQUIPAMENTO ) RA
+                ON RA.LOCAL_INSTALACAO = SA.LOCAL_INSTALACAO
+                    AND RA.EQUIPAMENTO =SA.EQUIPAMENTO
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO NOT LIKE 'AX-%') LIGF
+                ON LIGF.LOCAL_INSTALACAO = SA.LOCAL_INSTALACAO
+                    AND LIGF.EQUIPAMENTO =SA.EQUIPAMENTO
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO LIKE 'RD-%'
+                    
+        -------------
+        UNION
+    (SELECT SA.EQUIPAMENTO AS COD_ID,
+         5697 AS DIST,
+        CASE
+        WHEN SUB.NR_PTO_ELET_INICIO IS NULL THEN
+        'D1-'||SA.EQUIPAMENTO
+        ELSE CAST (''||SUB.NR_PTO_ELET_INICIO AS VARCHAR(20))END AS PAC_1,
+        CASE
+        WHEN SUB.NR_PTO_ELET_FIM IS NULL THEN
+        'D2-'||SA.EQUIPAMENTO
+        ELSE CAST (''||SUB.NR_PTO_ELET_FIM AS VARCHAR(20))END AS PAC_2,
+        CASE
+        WHEN A3 =29 THEN
+        16
+        WHEN A3 =33 THEN
+        19
+        WHEN A3 =40 THEN
+        23
+        WHEN A3 =41 THEN
+        24
+        WHEN A3 =49 THEN
+        29
+        WHEN A3 =53 THEN
+        31
+        WHEN A3 =54 THEN
+        32
+        WHEN A3 =55 THEN
+        34
+        WHEN A3 =59 THEN
+        37
+        WHEN A3 =60 THEN
+        38
+        WHEN A3 =61 THEN
+        41
+        WHEN A3 =62 THEN
+        42
+        WHEN A3 =63 THEN
+        43
+        WHEN A3 =92 THEN
+        91
+        ELSE 0
+        END AS POT_NOM, 
+        TIPO_REGULADOR(SA.LOCAL_INSTALACAO) AS TIP_REGU, 
+        1 AS TEN_REG, COALESCE(LIGF.LIG_FAS,'0')as LIG_FAS_P, 
+        COALESCE(LIGF.LIG_FAS,'0')as LIG_FAS_S,
+        CASE
+        WHEN A4=05 THEN
+        3
+        WHEN A4=07 THEN
+        5
+        WHEN A4=10 THEN
+        12
+        WHEN A4=13 THEN
+        18
+        WHEN A4=16 THEN
+        22
+        WHEN A4=19 THEN
+        23
+        WHEN A4=22 THEN
+        24
+        ELSE 0
+        END AS COR_NOM,
+        CASE
+        WHEN A2=15 THEN
+        13
+        WHEN A2=25 THEN
+        6
+        WHEN A2=34 THEN
+        3
+        ELSE 0
+        END AS REL_TP,  
+        CASE
+        WHEN A4 =05 THEN
+        44
+        WHEN A4=13 THEN
+        55
+        WHEN A4=22 THEN
+        58
+        WHEN A4=10 THEN
+        53
+        WHEN A4=16 THEN
+        57
+        WHEN A4=19 THEN
+        58
+        ELSE 0
+        END AS REL_TC,
+        CASE
+        WHEN SA.GRUPO_DE_PLANEJAMENTO='GRD' THEN
+        '190400'
+        ELSE SA.ODI
+        END AS ODI, SA.TI, SA.CENTRO_MODULAR AS CM, 
+        SA.TUC, 
+        SA.A1, 
+        SA.A2, 
+        SA.A3, 
+        SA.A4, 
+        SA.A5, 
+        COALESCE (SA.A6,'00') AS A6, 
+        SA.IDUC, 
+        DECODE(DATA_IMOB, NULL,'NIM', 'AT1') AS SITCONT, 
+        data_imob as DAT_IMO,
+        SA.PER_FER, 
+        SA.PER_TOT, 
+        SA.R, 
+        SA.XHL, 
+        NVL(ENERGIA.ENE_01, 0) AS ENE_01,
+        NVL(ENERGIA.ENE_02, 0) AS ENE_02,
+        NVL(ENERGIA.ENE_03, 0) AS ENE_03,
+        NVL(ENERGIA.ENE_04, 0) AS ENE_04,
+        NVL(ENERGIA.ENE_05, 0) AS ENE_05,
+        NVL(ENERGIA.ENE_06, 0) AS ENE_06,
+        NVL(ENERGIA.ENE_07, 0) AS ENE_07,
+        NVL(ENERGIA.ENE_08, 0) AS ENE_08,
+        NVL(ENERGIA.ENE_09, 0) AS ENE_09,
+        NVL(ENERGIA.ENE_10, 0) AS ENE_10,
+        NVL(ENERGIA.ENE_11, 0) AS ENE_11,
+        NVL(ENERGIA.ENE_12, 0) AS ENE_12,
+        SA.LOCAL_INSTALACAO AS DESCR
+    FROM MV_BDGD_SAP SA
+    INNER JOIN GEN_BDGD2019.V_EQPTOS_SUBESTACAO SUB
+        ON SA.LOCAL_INSTALACAO=SUB.local_inst
+    --INNER JOIN BDGD_STAGING.TAB_NODE_SUB NS
+       -- ON NS.LOC_INST_SAP=SUB.PAC2
+    LEFT JOIN BDGD_STAGING.MV_GENESIS_EQRE GEN
+        ON SA.EQUIPAMENTO = GEN.COD_ID
+    LEFT JOIN BDGD_STAGING.TAB_ENERGIA_EQRE ENERGIA
+        ON ENERGIA.DESCR = SA.LOCAL_INSTALACAO
+    INNER JOIN -- Completa o campo LIG_FAS de acordo com q ordem do registro 
+        (SELECT SA.LOCAL_INSTALACAO,
+         SA.EQUIPAMENTO,
+
+            CASE
+            WHEN RA.RANK= 1 THEN
+            'A'
+            WHEN RA.RANK= 2 THEN
+            'B'
+            WHEN RA.RANK= 3 THEN
+            'C'
+            ELSE '0'
+            END AS LIG_FAS
+        FROM MV_BDGD_SAP SA
+        LEFT JOIN BDGD_STAGING.MV_GENESIS_EQRE GEN
+            ON SA.EQUIPAMENTO = GEN.COD_ID
+        INNER JOIN 
+            (SELECT SA.LOCAL_INSTALACAO,
+         SA.EQUIPAMENTO,
+         RANK()
+                OVER ( PARTITION BY SA.LOCAL_INSTALACAO
+            ORDER BY  SA.EQUIPAMENTO DESC )as RANK
+            FROM MV_BDGD_SAP SA
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO NOT LIKE 'AX-%'
+            GROUP BY  SA.LOCAL_INSTALACAO,EQUIPAMENTO ) RA
+                ON RA.LOCAL_INSTALACAO = SA.LOCAL_INSTALACAO
+                    AND RA.EQUIPAMENTO =SA.EQUIPAMENTO
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO NOT LIKE 'AX-%') LIGF
+                ON LIGF.LOCAL_INSTALACAO = SA.LOCAL_INSTALACAO
+                    AND LIGF.EQUIPAMENTO =SA.EQUIPAMENTO
+            WHERE SA.bdgd = 'EQRE'
+                    AND SA.STATUS_SE NOT IN ('LIDI','MREL')
+                    AND SA.LOCAL_INSTALACAO LIKE 'SE%' ))
